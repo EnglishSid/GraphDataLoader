@@ -9,12 +9,10 @@ The key to loading any data into the Graph is to understand the target datamodel
 
 The Person Name and Email would be considered properties of the node `Person`, whereas the `PersonLocation` would be better placed as a dedicated node within the database and thus allow you to create a limited set of unique locations and simply relate the `Person` to the `Location`
 
-
-:bulb: Tip<br>
+:bulb:Tip:bulb:<br>
 Drawing your datamodel out as a set of circles and connections will help you understand the target model
 
 ![example 1](images/datamodel1.png)
-
 
 ## Preparing the CSV file
 - Column headings should not include spaces
@@ -37,25 +35,23 @@ RETURN p
 ~~~
 
 #### Breakdown of the `MERGE` statement
-<br>
-p = runtime variable within the query<br>
-Person = name of the target node<br>
-{name: = name of the target property within the node<br>
-PersonData. = friendly name given to the CSV file in the LOAD statement<br>
-Person.PersonName = column name within the CSV file to select the property value from<br>
-email: = name of the target property within the node<br>
-Person.PersonEmail = column name within the CSV file to select the property value from<br>
-<br>
+`p` = runtime variable within the query<br>
+`Person` = name of the target node<br>
+`{name:` = name of the target property within the node<br>
+`PersonData` = friendly name given to the CSV file in the LOAD statement<br>
+`PersonData.PersonName` = column name within the CSV file to select the property value from<br>
+`email:` = name of the target property within the node<br>
+`PersonData.PersonEmail` = column name within the CSV file to select the property value from<br>
 
 #### Results
 
 ![](images/firstLoad.png)<br>
 
-:bulb: Tip<br>
+:bulb:Tip:bulb:<br>
 Your CSV file can include data\columns not used in your load query - i.e. you can create a master CSV file and run multiple load scripts against it<br>
 
 
-### create and build a relationship
+### Create and build a relationship
 This query creates a set of unique location nodes and builds a relationship from the preloaded people to these locations
 
 ~~~
