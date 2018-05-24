@@ -3,8 +3,8 @@
 Guidelines for data modelling and loading additional data into the Neo4j database
 <br>
 
-- Setting up your sandbox environment
-- Initial dataset (optional)
+- [Setting up your sandbox environment](https://github.dxc.com/DigitalExplorer/Digital-Explorer-Specs/blob/master/Sandbox/SandboxSetup/readme.md)
+- [Initial dataset (optional)](https://github.dxc.com/DigitalExplorer/Digital-Explorer-Specs/blob/master/Sandbox/datasets.md)
 - [Loading your data from a CSV file](DataLoadCSV/readme.md)
 
 
