@@ -5,13 +5,13 @@ Guidelines for data modelling and loading additional data into the Neo4j databas
 
 - Setting up your sandbox environment
 - Initial dataset (optional)
-- [Loading your data from a CSV file](DataLoadCSV\readme.md)
+- [Loading your data from a CSV file](DataLoadCSV/readme.md)
 
 
 ---
 ### To do
 
-dataload from external sources (e.g. JSON or existing database)
+data loads from external sources (e.g. JSON or existing database)
 
 
 
