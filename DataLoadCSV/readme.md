@@ -25,8 +25,14 @@ Drawing your datamodel out as a set of circles and connections will help you und
 
 
 ### Simple create script
+#### Example dataset
+`PersonName,PersonEmail,PersonLocation`<br>
+`John,john@dxc.com,UK`<br>
+`Fred,fred@dxc.com,UK`<br>
+`Joanne,jo@dxc.com,US`<br>
+`Carl,carl@dxc.com,US`
 
-- [Example Dataset](exampledata.csv)
+[Download the Example Dataset](exampledata.csv)
 
 ~~~
 LOAD csv with headers from "file:///exampledata.csv" as PersonData
